@@ -342,6 +342,13 @@
 		29FD1B5022FF13190095A0BE /* VTSessionPropertyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FD1B4F22FF13190095A0BE /* VTSessionPropertyKey.swift */; };
 		29FD1B5122FF13190095A0BE /* VTSessionPropertyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FD1B4F22FF13190095A0BE /* VTSessionPropertyKey.swift */; };
 		29FD1B5222FF13190095A0BE /* VTSessionPropertyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FD1B4F22FF13190095A0BE /* VTSessionPropertyKey.swift */; };
+		4055A0C22521971A00584757 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4055A0C12521971A00584757 /* ViewController.swift */; };
+		4055A0CF2521972C00584757 /* STCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 4055A0CA2521972B00584757 /* STCamera.m */; };
+		4055A0D02521972C00584757 /* STGLPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 4055A0CB2521972B00584757 /* STGLPreview.m */; };
+		4055A0D12521972C00584757 /* STVFShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4055A0CC2521972C00584757 /* STVFShader.m */; };
+		4055A0E02521B1F100584757 /* ExtraAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4055A0D62521B19F00584757 /* ExtraAPI.swift */; };
+		4083206A2521B4F50016C467 /* AudioCaptureCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408320692521B4F50016C467 /* AudioCaptureCenter.swift */; };
+		408320712521B5070016C467 /* XBEchoCancellation.m in Sources */ = {isa = PBXBuildFile; fileRef = 408320702521B5070016C467 /* XBEchoCancellation.m */; };
 		BC20DF2C2503747E007BC608 /* HKPictureInPicureControllerPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20DF2B2503747E007BC608 /* HKPictureInPicureControllerPosition.swift */; };
 		BC20DF2D25037498007BC608 /* HKPictureInPicureControllerPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20DF2B2503747E007BC608 /* HKPictureInPicureControllerPosition.swift */; };
 		BC20DF2E25037498007BC608 /* HKPictureInPicureControllerPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20DF2B2503747E007BC608 /* HKPictureInPicureControllerPosition.swift */; };
@@ -654,6 +661,18 @@
 		29F6F4841DFB83E200920A3A /* RTMPHandshake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTMPHandshake.swift; sourceTree = "<group>"; };
 		29F97F232336A4FA00A4C317 /* SettingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTests.swift; sourceTree = "<group>"; };
 		29FD1B4F22FF13190095A0BE /* VTSessionPropertyKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTSessionPropertyKey.swift; sourceTree = "<group>"; };
+		4055A0C12521971A00584757 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4055A0C82521972B00584757 /* Example iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		4055A0C92521972B00584757 /* STGLPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGLPreview.h; sourceTree = "<group>"; };
+		4055A0CA2521972B00584757 /* STCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCamera.m; sourceTree = "<group>"; };
+		4055A0CB2521972B00584757 /* STGLPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGLPreview.m; sourceTree = "<group>"; };
+		4055A0CC2521972C00584757 /* STVFShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVFShader.m; sourceTree = "<group>"; };
+		4055A0CD2521972C00584757 /* STCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCamera.h; sourceTree = "<group>"; };
+		4055A0CE2521972C00584757 /* STVFShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVFShader.h; sourceTree = "<group>"; };
+		4055A0D62521B19F00584757 /* ExtraAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraAPI.swift; sourceTree = "<group>"; };
+		408320692521B4F50016C467 /* AudioCaptureCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioCaptureCenter.swift; sourceTree = "<group>"; };
+		4083206F2521B5070016C467 /* XBEchoCancellation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBEchoCancellation.h; sourceTree = "<group>"; };
+		408320702521B5070016C467 /* XBEchoCancellation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBEchoCancellation.m; sourceTree = "<group>"; };
 		BC20DF2B2503747E007BC608 /* HKPictureInPicureControllerPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKPictureInPicureControllerPosition.swift; sourceTree = "<group>"; };
 		BC20DF33250374EA007BC608 /* HKPictureInPicureController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKPictureInPicureController+Extension.swift"; sourceTree = "<group>"; };
 		BC44A1A823D31E92002D4297 /* AudioConverter.AudioBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioConverter.AudioBuffer.swift; sourceTree = "<group>"; wrapsLines = 1; };
@@ -899,6 +918,7 @@
 				BC20DF2A25037454007BC608 /* PiP */,
 				29C0E0591C2EB00A009DD8E8 /* RTMP */,
 				290907CE1C3961BC00F2E80C /* Util */,
+				4055A0D62521B19F00584757 /* ExtraAPI.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -988,6 +1008,7 @@
 		2968973E1CDB01920074D5F0 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				4055A0C72521972300584757 /* OC */,
 				2968973F1CDB01AD0074D5F0 /* iOS */,
 				296543541D62FE3E00734698 /* macOS */,
 				29D3D4FE1ED0536700DD4AA6 /* tvOS */,
@@ -1002,6 +1023,7 @@
 				291F4E361CF206E200F59C51 /* Icon.png */,
 				29205CBD1E461F4E009D3FFF /* Main.storyboard */,
 				296897411CDB01D20074D5F0 /* AppDelegate.swift */,
+				4055A0C12521971A00584757 /* ViewController.swift */,
 				296897441CDB01D20074D5F0 /* LiveViewController.swift */,
 				BCFB355924FA40DD00DC5108 /* PlaybackContainerViewController.swift */,
 				BCFB355324FA275600DC5108 /* PlaybackViewController.swift */,
@@ -1168,6 +1190,23 @@
 				BC83A4722403D83B006BDE06 /* VTCompressionSession+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		4055A0C72521972300584757 /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				4083206F2521B5070016C467 /* XBEchoCancellation.h */,
+				408320702521B5070016C467 /* XBEchoCancellation.m */,
+				408320692521B4F50016C467 /* AudioCaptureCenter.swift */,
+				4055A0CD2521972C00584757 /* STCamera.h */,
+				4055A0CA2521972B00584757 /* STCamera.m */,
+				4055A0C92521972B00584757 /* STGLPreview.h */,
+				4055A0CB2521972B00584757 /* STGLPreview.m */,
+				4055A0CE2521972C00584757 /* STVFShader.h */,
+				4055A0CC2521972C00584757 /* STVFShader.m */,
+				4055A0C82521972B00584757 /* Example iOS-Bridging-Header.h */,
+			);
+			path = OC;
 			sourceTree = "<group>";
 		};
 		BC20DF2A25037454007BC608 /* PiP */ = {
@@ -1387,9 +1426,7 @@
 				TargetAttributes = {
 					2915EC511D85BDF100621092 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = SUEQ2SZ2L5;
 						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
 					};
 					2945CBBC1B4BE66000104112 = {
 						CreatedOnToolsVersion = 6.4;
@@ -1406,9 +1443,7 @@
 					};
 					29C9327D1CD76FB800283FC5 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = SUEQ2SZ2L5;
-						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 1200;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1587,6 +1622,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4055A0E02521B1F100584757 /* ExtraAPI.swift in Sources */,
 				295891161EEB8DFC00CE51E1 /* FLVTagType.swift in Sources */,
 				29B876B11CD70B2800FC07DA /* RTMPMessage.swift in Sources */,
 				2941746B22D069B300A2944F /* AudioEffect.swift in Sources */,
@@ -1842,11 +1878,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				291468191E581C8F00E619BA /* Preference.swift in Sources */,
+				4055A0D12521972C00584757 /* STVFShader.m in Sources */,
+				4083206A2521B4F50016C467 /* AudioCaptureCenter.swift in Sources */,
+				4055A0CF2521972C00584757 /* STCamera.m in Sources */,
 				BCFB355A24FA40DD00DC5108 /* PlaybackContainerViewController.swift in Sources */,
 				296897671CDB02940074D5F0 /* AppDelegate.swift in Sources */,
+				4055A0D02521972C00584757 /* STGLPreview.m in Sources */,
 				296897681CDB02940074D5F0 /* LiveViewController.swift in Sources */,
+				408320712521B5070016C467 /* XBEchoCancellation.m in Sources */,
 				BCFB355524FA27EA00DC5108 /* PlaybackViewController.swift in Sources */,
 				2955F51F1D09EBAD004CC995 /* VisualEffect.swift in Sources */,
+				4055A0C22521971A00584757 /* ViewController.swift in Sources */,
 				295074311E462105007F15A4 /* PreferenceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2048,8 +2090,9 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = SUEQ2SZ2L5;
+				DEVELOPMENT_TEAM = SKB334AM79;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Examples/iOS/Screencast/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -2061,6 +2104,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.haishinkit.HaishinKit.Example-iOS.Screencast";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.*";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
@@ -2075,7 +2119,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = SUEQ2SZ2L5;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = SKB334AM79;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Examples/iOS/Screencast/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -2087,6 +2132,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.haishinkit.HaishinKit.Example-iOS.Screencast";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.*";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -2385,10 +2431,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = SUEQ2SZ2L5;
+				DEVELOPMENT_TEAM = SKB334AM79;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -2401,6 +2449,9 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.haishinkit.HaishinKit.Example-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.*";
+				SWIFT_OBJC_BRIDGING_HEADER = "Examples/OC/Example iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -2411,9 +2462,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = SUEQ2SZ2L5;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = SKB334AM79;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Examples/iOS/Info.plist";
@@ -2424,6 +2477,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.haishinkit.HaishinKit.Example-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.*";
+				SWIFT_OBJC_BRIDGING_HEADER = "Examples/OC/Example iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
