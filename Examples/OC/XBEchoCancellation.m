@@ -7,6 +7,7 @@
 //
 
 #import "XBEchoCancellation.h"
+#include <mach/mach_time.h>
 
 typedef struct MyAUGraphStruct{
     AUGraph graph;
@@ -371,13 +372,25 @@ OSStatus InputCallback_xb(void *inRefCon,
     }
     if (echoCancellation.bl_input2) {
         AudioStreamBasicDescription asbd = [ref streamFormat];
-        CMSampleBufferRef buff = NULL;
+        CMSampleBufferRef buff = malloc(sizeof(CMSampleBufferRef));
         CMFormatDescriptionRef format = NULL;
         OSStatus status = CMAudioFormatDescriptionCreate(kCFAllocatorDefault, &asbd, 0, NULL, 0, NULL, NULL, &format);
         if (status) {
             return status;
         }
-        CMSampleTimingInfo timing = { CMTimeMake(1, asbd.mSampleRate), kCMTimeZero, kCMTimeInvalid };
+        
+        mach_timebase_info_data_t p;
+        mach_timebase_info(&p);
+        
+        uint64_t mach_now = inTimeStamp->mHostTime;
+        mach_now *= p.numer;
+        mach_now /= p.denom;
+        CMSampleTimingInfo timing;
+        CMTime duration = CMTimeMake(1, asbd.mSampleRate);
+        timing.duration = duration;
+        timing.presentationTimeStamp = CMTimeMake(mach_now, 1000000000);
+        timing.decodeTimeStamp = kCMTimeInvalid;
+        
         status = CMSampleBufferCreate(kCFAllocatorDefault, NULL, false, NULL, NULL, format, (CMItemCount)inNumberFrames, 1, &timing, 0, NULL, &buff);
 
         if (status) { //失败

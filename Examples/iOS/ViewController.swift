@@ -57,10 +57,10 @@ class ViewController: UIViewController {
         renderView.mirrored = false
         view.addSubview(renderView)
 
-        audioCapture.didOutputAudioBufferList = { [weak self] in
-            self?.rtmpStream?.pushAudioUnitBuffer($0, description: $1)
+        audioCapture.didOutputAudioSampleBuffer = { [weak self] in
+            self?.rtmpStream?.pushAudioSampleBuffer($0)
         }
-        
+
         rtmpConnection.addEventListener(.rtmpStatus, selector: #selector(rtmpStatusHandler), observer: self)
         rtmpConnection.addEventListener(.ioError, selector: #selector(rtmpErrorHandler), observer: self)
     }
@@ -76,7 +76,7 @@ class ViewController: UIViewController {
         ]
         rtmpStream.audioSettings = [
             .muted: false, // mute audio
-            .bitrate: 96 * 1000,
+            .bitrate: 128 * 1000,
         ]
 
 //        rtmpStream.attachAudio(AVCaptureDevice.default(for: .audio)) { error in
