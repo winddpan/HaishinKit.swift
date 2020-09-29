@@ -1,5 +1,5 @@
 //
-//  PushAPI.swift
+//  ExtendAPI.swift
 //  Example iOS
 //
 //  Created by PAN on 2020/9/28.
@@ -20,5 +20,16 @@ public extension RTMPStream {
 
     func pushAudioSampleBuffer(_ buffer: CMSampleBuffer) {
         mixer.audioIO.encoder.encodeSampleBuffer(buffer)
+    }
+}
+
+public extension RTMPStream {
+    var fps: Float64 {
+        set {
+            mixer.videoIO.fps = newValue
+        }
+        get {
+            mixer.videoIO.fps
+        }
     }
 }
