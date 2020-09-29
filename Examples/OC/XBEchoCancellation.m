@@ -52,7 +52,7 @@ typedef struct MyAUGraphStruct{
         _echoCancellationStatus = XBEchoCancellationStatus_close;
         _volumeScale = 1;
         self.isRunningService = NO;
-        [self startService];
+        // [self startService];
     }
     return self;
 }
@@ -417,6 +417,8 @@ OSStatus outputRenderTone_xb(
                           AudioBufferList 			*ioData)
 
 {
+    memset(ioData->mBuffers[0].mData, 0, ioData->mBuffers[0].mDataByteSize);
+
     XBEchoCancellation *echoCancellation = (__bridge XBEchoCancellation*)inRefCon;
     if (echoCancellation.isNeedOutputCallback == NO)
     {
@@ -426,7 +428,6 @@ OSStatus outputRenderTone_xb(
     if (echoCancellation.bl_output)
     {
         //TODO: implement this function
-        memset(ioData->mBuffers[0].mData, 0, ioData->mBuffers[0].mDataByteSize);
         echoCancellation.bl_output(ioData,inNumberFrames);
     }
 

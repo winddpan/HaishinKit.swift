@@ -1,5 +1,5 @@
 //
-//  ExtraAPI.swift
+//  PushAPI.swift
 //  Example iOS
 //
 //  Created by PAN on 2020/9/28.

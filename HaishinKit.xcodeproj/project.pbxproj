@@ -346,7 +346,7 @@
 		4055A0CF2521972C00584757 /* STCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 4055A0CA2521972B00584757 /* STCamera.m */; };
 		4055A0D02521972C00584757 /* STGLPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 4055A0CB2521972B00584757 /* STGLPreview.m */; };
 		4055A0D12521972C00584757 /* STVFShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4055A0CC2521972C00584757 /* STVFShader.m */; };
-		4055A0E02521B1F100584757 /* ExtraAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4055A0D62521B19F00584757 /* ExtraAPI.swift */; };
+		4055A0E02521B1F100584757 /* PushAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4055A0D62521B19F00584757 /* PushAPI.swift */; };
 		4083206A2521B4F50016C467 /* AudioCaptureCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408320692521B4F50016C467 /* AudioCaptureCenter.swift */; };
 		408320712521B5070016C467 /* XBEchoCancellation.m in Sources */ = {isa = PBXBuildFile; fileRef = 408320702521B5070016C467 /* XBEchoCancellation.m */; };
 		BC20DF2C2503747E007BC608 /* HKPictureInPicureControllerPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20DF2B2503747E007BC608 /* HKPictureInPicureControllerPosition.swift */; };
@@ -669,7 +669,7 @@
 		4055A0CC2521972C00584757 /* STVFShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVFShader.m; sourceTree = "<group>"; };
 		4055A0CD2521972C00584757 /* STCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCamera.h; sourceTree = "<group>"; };
 		4055A0CE2521972C00584757 /* STVFShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVFShader.h; sourceTree = "<group>"; };
-		4055A0D62521B19F00584757 /* ExtraAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraAPI.swift; sourceTree = "<group>"; };
+		4055A0D62521B19F00584757 /* PushAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushAPI.swift; sourceTree = "<group>"; };
 		408320692521B4F50016C467 /* AudioCaptureCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioCaptureCenter.swift; sourceTree = "<group>"; };
 		4083206F2521B5070016C467 /* XBEchoCancellation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBEchoCancellation.h; sourceTree = "<group>"; };
 		408320702521B5070016C467 /* XBEchoCancellation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBEchoCancellation.m; sourceTree = "<group>"; };
@@ -918,7 +918,7 @@
 				BC20DF2A25037454007BC608 /* PiP */,
 				29C0E0591C2EB00A009DD8E8 /* RTMP */,
 				290907CE1C3961BC00F2E80C /* Util */,
-				4055A0D62521B19F00584757 /* ExtraAPI.swift */,
+				4055A0D62521B19F00584757 /* PushAPI.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -1622,7 +1622,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4055A0E02521B1F100584757 /* ExtraAPI.swift in Sources */,
+				4055A0E02521B1F100584757 /* PushAPI.swift in Sources */,
 				295891161EEB8DFC00CE51E1 /* FLVTagType.swift in Sources */,
 				29B876B11CD70B2800FC07DA /* RTMPMessage.swift in Sources */,
 				2941746B22D069B300A2944F /* AudioEffect.swift in Sources */,

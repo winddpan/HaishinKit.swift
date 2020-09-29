@@ -27,13 +27,17 @@ class AudioCaptureCenter {
     }
 
     func startCapture() {
-        guard !isRunning else { return }
+        guard !isRunning else {
+            return
+        }
         isRunning = true
 
         echoCancellation.volumeScale = volumeScaleFactor * 1.5
         if didOutputAudioBufferList != nil {
             echoCancellation.bl_input = { [weak self, unowned echoCancellation] buffer in
-                guard let self = self else { return }
+                guard let self = self else {
+                    return
+                }
                 if let buffer = buffer?.pointee {
                     self.didOutputAudioBufferList?(buffer, echoCancellation.streamFormat)
                 }
@@ -41,7 +45,9 @@ class AudioCaptureCenter {
         }
         if didOutputAudioSampleBuffer != nil {
             echoCancellation.bl_input2 = { [weak self] buffer in
-                guard let self = self, let buffer = buffer else { return }
+                guard let self = self, let buffer = buffer else {
+                    return
+                }
                 self.didOutputAudioSampleBuffer?(buffer)
             }
         }
@@ -51,9 +57,13 @@ class AudioCaptureCenter {
     }
 
     func stopCapture() {
-        guard isRunning else { return }
+        guard isRunning else {
+            return
+        }
         isRunning = false
 
         echoCancellation.stop()
+        echoCancellation.stopInput()
+        echoCancellation.close()
     }
 }

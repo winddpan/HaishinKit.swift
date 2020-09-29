@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 
     var rtmpConnection = RTMPConnection()
     var rtmpStream: RTMPStream!
-    let audioCapture = AudioCaptureCenter()
+    lazy var audioCapture = AudioCaptureCenter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,10 +79,6 @@ class ViewController: UIViewController {
             .bitrate: 128 * 1000,
         ]
 
-//        rtmpStream.attachAudio(AVCaptureDevice.default(for: .audio)) { error in
-//            logger.warn(error.description)
-//        }
-//
         rtmpConnection.connect(url)
         rtmpStream.publish("OKOKOK")
 
@@ -93,15 +89,17 @@ class ViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
 
-        rtmpConnection.close()
-        rtmpStream.close()
         camera.stopRunning()
         audioCapture.stopCapture()
+
+        rtmpConnection.close()
+        rtmpStream.close()
+        rtmpStream.dispose()
     }
-    
+
     let url = "rtmp://pili-publish.yuanyuan128.com/ihuajian/159121543?e=1601375094&token=sg1-tgSpSG8q2WnTuDTax9aIYYyUIfre4RccaEr9:IdeAUjy-yEh57o5Ce8UekuNsYks%3D&serialnum=1601288707596&addtssei=true"
     private var retryCount: Int = 0
-    
+
     @objc
     private func rtmpStatusHandler(_ notification: Notification) {
         let e = Event.from(notification)
@@ -113,7 +111,7 @@ class ViewController: UIViewController {
         case RTMPConnection.Code.connectSuccess.rawValue:
             retryCount = 0
             rtmpStream!.publish(Preference.defaultInstance.streamName!)
-            // sharedObject!.connect(rtmpConnection)
+        // sharedObject!.connect(rtmpConnection)
         case RTMPConnection.Code.connectFailed.rawValue, RTMPConnection.Code.connectClosed.rawValue:
             guard retryCount <= 3 else {
                 return
@@ -125,7 +123,7 @@ class ViewController: UIViewController {
             break
         }
     }
-    
+
     @objc
     private func rtmpErrorHandler(_ notification: Notification) {
         logger.error(notification)
