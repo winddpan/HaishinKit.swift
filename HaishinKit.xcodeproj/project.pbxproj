@@ -247,7 +247,6 @@
 		29DF20672312A436004057C3 /* RTMPSocketCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DF20652312A436004057C3 /* RTMPSocketCompatible.swift */; };
 		29DF20682312A436004057C3 /* RTMPSocketCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DF20652312A436004057C3 /* RTMPSocketCompatible.swift */; };
 		29E7968D1ED18C5300D75C6C /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291468161E581C7D00E619BA /* Preference.swift */; };
-		29E7969A1ED197A800D75C6C /* GLHKView-tvOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E796991ED197A800D75C6C /* GLHKView-tvOS.swift */; };
 		29EA87D31E799F360043A5F8 /* ExpressibleByIntegerLiteral+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA87D21E799F360043A5F8 /* ExpressibleByIntegerLiteral+Extension.swift */; };
 		29EA87D51E799F670043A5F8 /* Mirror+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA87D41E799F670043A5F8 /* Mirror+Extension.swift */; };
 		29EA87D61E799F6A0043A5F8 /* Mirror+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA87D41E799F670043A5F8 /* Mirror+Extension.swift */; };
@@ -376,6 +375,10 @@
 		BC558268240BB40E00011AC0 /* RTMPStreamInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC558267240BB40E00011AC0 /* RTMPStreamInfo.swift */; };
 		BC558269240BB40E00011AC0 /* RTMPStreamInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC558267240BB40E00011AC0 /* RTMPStreamInfo.swift */; };
 		BC55826A240BB40E00011AC0 /* RTMPStreamInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC558267240BB40E00011AC0 /* RTMPStreamInfo.swift */; };
+		BC5C6D932557F7940073412C /* Logboard in Frameworks */ = {isa = PBXBuildFile; productRef = BC5C6D922557F7940073412C /* Logboard */; };
+		BC5C6D942557F7940073412C /* Logboard in Embed Frameworks */ = {isa = PBXBuildFile; productRef = BC5C6D922557F7940073412C /* Logboard */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BC5C6D9F2557F7C70073412C /* Logboard in Frameworks */ = {isa = PBXBuildFile; productRef = BC5C6D9E2557F7C70073412C /* Logboard */; };
+		BC5C6DA02557F7C70073412C /* Logboard in Embed Frameworks */ = {isa = PBXBuildFile; productRef = BC5C6D9E2557F7C70073412C /* Logboard */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		BC7A23F525171C8F0089F77C /* MTHKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2999C3742071138F00892E55 /* MTHKView.swift */; };
 		BC7A23F625171C8F0089F77C /* MTHKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2999C3742071138F00892E55 /* MTHKView.swift */; };
 		BC7EDAB2250918E9005AC3BD /* Logboard in Frameworks */ = {isa = PBXBuildFile; productRef = BC7EDAB1250918E9005AC3BD /* Logboard */; };
@@ -384,6 +387,8 @@
 		BC83A4732403D83B006BDE06 /* VTCompressionSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC83A4722403D83B006BDE06 /* VTCompressionSession+Extension.swift */; };
 		BC83A4742403D83B006BDE06 /* VTCompressionSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC83A4722403D83B006BDE06 /* VTCompressionSession+Extension.swift */; };
 		BC83A4752403D83B006BDE06 /* VTCompressionSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC83A4722403D83B006BDE06 /* VTCompressionSession+Extension.swift */; };
+		BC8E32E42532F3700087DF49 /* GLHKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C263171D00804A0098D4EF /* GLHKView.swift */; };
+		BC8E32E92532F3710087DF49 /* GLHKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C263171D00804A0098D4EF /* GLHKView.swift */; };
 		BC9CFA9323BDE8B700917EEF /* NetStreamRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CFA9223BDE8B700917EEF /* NetStreamRenderer.swift */; };
 		BC9CFA9423BDE8B700917EEF /* NetStreamRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CFA9223BDE8B700917EEF /* NetStreamRenderer.swift */; };
 		BC9CFA9523BDE8B700917EEF /* NetStreamRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CFA9223BDE8B700917EEF /* NetStreamRenderer.swift */; };
@@ -478,7 +483,19 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BC5C6D942557F7940073412C /* Logboard in Embed Frameworks */,
 				2942EF861DFF4D3C008E620C /* HaishinKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC5C6D852557F6FC0073412C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BC5C6DA02557F7C70073412C /* Logboard in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -646,7 +663,6 @@
 		29DC17B221D0CC0600E26CED /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
 		29DF20612312A3DD004057C3 /* RTMPNWSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTMPNWSocket.swift; sourceTree = "<group>"; };
 		29DF20652312A436004057C3 /* RTMPSocketCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTMPSocketCompatible.swift; sourceTree = "<group>"; };
-		29E796991ED197A800D75C6C /* GLHKView-tvOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GLHKView-tvOS.swift"; sourceTree = "<group>"; };
 		29EA87D21E799F360043A5F8 /* ExpressibleByIntegerLiteral+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExpressibleByIntegerLiteral+Extension.swift"; sourceTree = "<group>"; };
 		29EA87D41E799F670043A5F8 /* Mirror+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mirror+Extension.swift"; sourceTree = "<group>"; };
 		29EA87D71E79A0090043A5F8 /* URL+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
@@ -693,6 +709,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC5C6D9F2557F7C70073412C /* Logboard in Frameworks */,
 				29DC67051E00477900A7DC71 /* HaishinKit.framework in Frameworks */,
 				2915EC541D85BDF100621092 /* ReplayKit.framework in Frameworks */,
 			);
@@ -718,6 +735,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC5C6D932557F7940073412C /* Logboard in Frameworks */,
 				2942EF841DFF4D06008E620C /* HaishinKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1081,7 +1099,6 @@
 			isa = PBXGroup;
 			children = (
 				29D3D4D41ED04E7100DD4AA6 /* DeviceUtil+Extenstion.swift */,
-				29C263171D00804A0098D4EF /* GLHKView.swift */,
 				299F7E3B1CD71A97001E7272 /* HaishinKit.h */,
 				299B13261D3B751400A1E8F5 /* HKView.swift */,
 				299F7E3A1CD71A97001E7272 /* Info.plist */,
@@ -1108,6 +1125,7 @@
 				29B876891CD70AFE00FC07DA /* AudioIOComponent.swift */,
 				29B8768B1CD70AFE00FC07DA /* AVMixer.swift */,
 				2976A47D1D48C5C700B53EF2 /* AVRecorder.swift */,
+				29C263171D00804A0098D4EF /* GLHKView.swift */,
 				2976A4801D49025B00B53EF2 /* IOComponent.swift */,
 				2999C3742071138F00892E55 /* MTHKView.swift */,
 				295891001EEB7A8B00CE51E1 /* ScalingMode.swift */,
@@ -1145,7 +1163,6 @@
 		29D3D4E41ED050F700DD4AA6 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				29E796991ED197A800D75C6C /* GLHKView-tvOS.swift */,
 				29D3D4E61ED0518900DD4AA6 /* HaishinKit.h */,
 				29D3D4E51ED0518900DD4AA6 /* Info.plist */,
 			);
@@ -1257,6 +1274,7 @@
 				2915EC4F1D85BDF100621092 /* Frameworks */,
 				2915EC4E1D85BDF100621092 /* Sources */,
 				2915EC501D85BDF100621092 /* Resources */,
+				BC5C6D852557F6FC0073412C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1264,6 +1282,7 @@
 			);
 			name = Screencast;
 			packageProductDependencies = (
+				BC5C6D9E2557F7C70073412C /* Logboard */,
 			);
 			productName = Screencast;
 			productReference = 2915EC521D85BDF100621092 /* Screencast.appex */;
@@ -1348,6 +1367,9 @@
 				2915EC6E1D85BDF100621092 /* PBXTargetDependency */,
 			);
 			name = "Example iOS";
+			packageProductDependencies = (
+				BC5C6D922557F7940073412C /* Logboard */,
+			);
 			productName = "Example iOS";
 			productReference = 29C9327E1CD76FB800283FC5 /* Example iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -1769,6 +1791,7 @@
 			files = (
 				29B876EC1CD70D5900FC07DA /* AudioConverter.swift in Sources */,
 				29B876ED1CD70D5900FC07DA /* H264Decoder.swift in Sources */,
+				BC8E32E42532F3700087DF49 /* GLHKView.swift in Sources */,
 				29B876EE1CD70D5900FC07DA /* H264Encoder.swift in Sources */,
 				29EA87EB1E79A3B70043A5F8 /* CMBlockBuffer+Extension.swift in Sources */,
 				29B876F01CD70D5900FC07DA /* Constants.swift in Sources */,
@@ -1920,7 +1943,6 @@
 				29EB3E0A1ED0586F001CAE8B /* TransportStream.swift in Sources */,
 				29EB3DFE1ED05849001CAE8B /* Data+Extension.swift in Sources */,
 				29EB3E321ED05A2C001CAE8B /* ByteArray.swift in Sources */,
-				29E7969A1ED197A800D75C6C /* GLHKView-tvOS.swift in Sources */,
 				29EB3E191ED05898001CAE8B /* NetSocket.swift in Sources */,
 				29EB3E101ED0587F001CAE8B /* AVRecorder.swift in Sources */,
 				2958910C1EEB8D1800CE51E1 /* FLVReader.swift in Sources */,
@@ -1932,6 +1954,7 @@
 				29EB3DF01ED05768001CAE8B /* H264Encoder.swift in Sources */,
 				29EB3E351ED05A33001CAE8B /* DeviceUtil.swift in Sources */,
 				29DC17B521D0CC0600E26CED /* Atomic.swift in Sources */,
+				BC8E32E92532F3710087DF49 /* GLHKView.swift in Sources */,
 				BC44A1AB23D31E92002D4297 /* AudioConverter.AudioBuffer.swift in Sources */,
 				29EB3E261ED05A07001CAE8B /* RTMPStream.swift in Sources */,
 				29DF20642312A3DD004057C3 /* RTMPNWSocket.swift in Sources */,
@@ -2275,7 +2298,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				ONLY_ACTIVE_ARCH = YES;
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-Xfrontend -debug-time-function-bodies";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haishinkit.HaishinKit;
@@ -2309,7 +2332,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.haishinkit.HaishinKit;
 				PRODUCT_NAME = HaishinKit;
 				PROVISIONING_PROFILE = "";
@@ -2384,7 +2407,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-Xfrontend -debug-time-function-bodies";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haishinkit.HaishinKit;
 				PRODUCT_NAME = HaishinKit;
@@ -2416,7 +2439,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.haishinkit.HaishinKit;
 				PRODUCT_NAME = HaishinKit;
 				SDKROOT = macosx;
@@ -2550,7 +2573,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.haishinkit.HaishinKit;
 				PRODUCT_NAME = HaishinKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2586,7 +2609,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.haishinkit.HaishinKit;
 				PRODUCT_NAME = HaishinKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2739,13 +2762,23 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/shogo4405/Logboard";
 			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 2.2.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BC5C6D922557F7940073412C /* Logboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC7EDAB0250918E9005AC3BD /* XCRemoteSwiftPackageReference "Logboard" */;
+			productName = Logboard;
+		};
+		BC5C6D9E2557F7C70073412C /* Logboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC7EDAB0250918E9005AC3BD /* XCRemoteSwiftPackageReference "Logboard" */;
+			productName = Logboard;
+		};
 		BC7EDAB1250918E9005AC3BD /* Logboard */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BC7EDAB0250918E9005AC3BD /* XCRemoteSwiftPackageReference "Logboard" */;
