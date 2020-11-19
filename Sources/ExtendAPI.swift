@@ -11,15 +11,19 @@ import Foundation
 
 public extension RTMPStream {
     func pushVideoPixelBuffer(_ imageBuffer: CVImageBuffer, presentationTimeStamp: CMTime, duration: CMTime) {
-        mixer.videoIO.encoder.encodeImageBuffer(
-            imageBuffer,
-            presentationTimeStamp: presentationTimeStamp,
-            duration: duration
-        )
+        mixer.videoIO.lockQueue.async {
+            self.mixer.videoIO.encoder.encodeImageBuffer(
+                imageBuffer,
+                presentationTimeStamp: presentationTimeStamp,
+                duration: duration
+            )
+        }
     }
 
     func pushAudioSampleBuffer(_ buffer: CMSampleBuffer) {
-        mixer.audioIO.encoder.encodeSampleBuffer(buffer)
+        mixer.audioIO.lockQueue.async {
+            self.mixer.audioIO.encoder.encodeSampleBuffer(buffer)
+        }
     }
 }
 
